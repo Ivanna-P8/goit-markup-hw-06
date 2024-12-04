@@ -236,8 +236,9 @@ a {
   max-width: 320px;
   margin: 0 auto;
   background-color: #2e2f42;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -262,6 +263,8 @@ a {
 @media only screen and (min-width: 768px) {
   .section-one {
     max-width: 768px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -285,6 +288,8 @@ a {
 @media only screen and (min-width: 1158px) {
   .section-one {
     max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -725,6 +730,7 @@ a {
   .footer-container {
     gap: 72px 24px;
     justify-content: center;
+    align-items: baseline;
   }
 }
 
@@ -805,7 +811,6 @@ a {
 .footer-socials {
   display: flex;
   gap: 16px;
-  margin-right: 70px;
 }
 
 /* Mobile sreen */
@@ -825,6 +830,21 @@ a {
     flex-direction: column;
     gap: 16px;
     margin: 0 auto;
+  }
+}
+
+/* Desktop sreen */
+@media only screen and (min-width: 1158px) {
+  .footer-social {
+    margin-right: 70px;
+  }
+}
+
+/* Desktop sreen */
+@media only screen and (min-width: 1158px) {
+  .footer-socials {
+    display: flex;
+    gap: 16px;
   }
 }
 
@@ -851,11 +871,15 @@ a {
   background-color: #31d0aa;
 }
 
+.container-footer-email {
+  display: flex;
+  flex-direction: column;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .container-footer-email {
     display: flex;
     flex-direction: column;
-    justify-content: left;
   }
 }
 
@@ -903,7 +927,7 @@ a {
   background-color: transparent;
   border-radius: 4px;
   color: #ffffff;
-  width: 264px;
+  width: 283px;
   height: 40px;
 
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -918,6 +942,13 @@ a {
 
   background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Tablet sreen */
+@media only screen and (min-width: 768px) {
+  .email-form-input {
+    width: 264px;
+  }
 }
 
 .email-form-input:focus {
@@ -971,7 +1002,7 @@ a {
 
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
   .footer-button {
-    margin-right: 106px;
+    margin-right: 32px;
   }
 }
 
@@ -1329,11 +1360,15 @@ input[type='checkbox']:checked + .checkboxform-label .checkboxform-span {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.menu-address {
+  font-style: normal;
+  margin-bottom: 48px;
+}
+
 .menu-address-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 48px;
 }
 
 .menu-address-link {
